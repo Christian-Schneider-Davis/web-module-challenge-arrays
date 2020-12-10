@@ -45,9 +45,16 @@ Use the copy function below to do the following:
     2. Return a copy of the received array  
 */
 
-function copy(array, string){
-    
+function copy(array){
+    let length = array.length 
+    let newArr = []
+
+    for(let i = 0;i < length; i++){
+        newArr[i] = array[i]
+    }
+    return newArr;
 }    
+
 
 
 
