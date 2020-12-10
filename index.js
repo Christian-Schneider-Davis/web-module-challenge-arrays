@@ -143,7 +143,7 @@ Use the removeFlavorByName function below to do the following:
 */
 
 function removeFlavorByName(array, flavor){
-    let indextoremove = null
+    let indextoremove //= null
     let size = array.length
     for (let i = size -1; i >= 0; i--){
         if (array[i]=== flavor){
@@ -178,8 +178,15 @@ Use the filterByWord function below to do the following:
     DO NOT USE ADVANCED ARRAY METHODS (i.e. .filter) to solve this problem. 
 */
 
-function filterByWord(/*your code here*/){
-    /*your code here*/
+function filterByWord(arrayOg, string){
+    let filteredArray = [];
+    for(let i = 0; i < arrayOg.length; i++){
+        if (arrayOg[i].includes(string)){
+            filteredArray.push(arrayOg[i]);
+
+        }
+    }
+    return filteredArray;
 }
 
 
